@@ -337,6 +337,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1364092927}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &831161304 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8198797460972869677, guid: 93d6aae0a93784b419429429a0d84c63,
+    type: 3}
+  m_PrefabInstance: {fileID: 8198797461786139637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &831659482 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8198797460973356591, guid: 93d6aae0a93784b419429429a0d84c63,
@@ -703,6 +709,11 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 831659482}
+    - target: {fileID: 1349924572209230079, guid: 1ae44e6163993ff45916a1e733444244,
+        type: 3}
+      propertyPath: FPCamara
+      value: 
+      objectReference: {fileID: 831161304}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ae44e6163993ff45916a1e733444244, type: 3}
 --- !u!1001 &1632144801863780246
