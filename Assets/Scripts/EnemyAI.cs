@@ -5,23 +5,44 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField] Transform target;
+    [SerializeField] float chaseRange = 5f;
 
     NavMeshAgent navMeshAgent;
+    float distanceToTarget = Mathf.Infinity;
+    bool isPlayerWatched = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        CheckForPlayer();
         DoTracking();
+    }
+
+    private void CheckForPlayer()
+    {
+        distanceToTarget = Vector3.Distance(target.position, transform.position);
+        if (distanceToTarget <= chaseRange)
+        {
+            isPlayerWatched = true;
+        }
     }
 
     private void DoTracking()
     {
-        navMeshAgent.SetDestination(target.position);
+        if (isPlayerWatched)
+        {
+            navMeshAgent.SetDestination(target.position);
+        }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        // Display the explosion radius when selected
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, chaseRange);
     }
 }
