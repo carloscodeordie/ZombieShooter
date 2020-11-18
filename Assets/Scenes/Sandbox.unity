@@ -120,27 +120,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 1a37de3acd4cb244f8289f71f306c074, type: 2}
---- !u!1 &265324302 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8546211586281268458, guid: 93d6aae0a93784b419429429a0d84c63,
-    type: 3}
-  m_PrefabInstance: {fileID: 8198797461786139637}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &265324303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 265324302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5be552a483526944b8444207e93750c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FPCamara: {fileID: 831161304}
-  range: 100
-  damage: 30
 --- !u!4 &360529659 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5862bbfe91a75054ca72c13b555b6ac5,
@@ -874,5 +853,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 265324306, guid: 93d6aae0a93784b419429429a0d84c63, type: 3}
+      propertyPath: muzzleFlash
+      value: 
+      objectReference: {fileID: 8198797461786139638}
+    - target: {fileID: 7105344941948949291, guid: 93d6aae0a93784b419429429a0d84c63,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93d6aae0a93784b419429429a0d84c63, type: 3}
+--- !u!198 &8198797461786139638 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9137503620922061924, guid: 93d6aae0a93784b419429429a0d84c63,
+    type: 3}
+  m_PrefabInstance: {fileID: 8198797461786139637}
+  m_PrefabAsset: {fileID: 0}

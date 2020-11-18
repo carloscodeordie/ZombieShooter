@@ -332,6 +332,23 @@ MonoBehaviour:
     slowDownRate: 20
     airControl: 0
     shellOffset: 0
+--- !u!114 &265324306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8546211586281268458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be552a483526944b8444207e93750c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamara: {fileID: 8198797460972869677}
+  range: 100
+  damage: 30
+  muzzleFlash: {fileID: 6429617976771826921, guid: 0d450074ee2e90340a371b3a2a781501,
+    type: 3}
 --- !u!1001 &6265855876882153324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -421,6 +438,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 49858ecb46223404b8475b34c72be073, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
+--- !u!1 &8546211586281268458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2337074158997199750, guid: ada2587319194f542957a8c2ae277cb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 6265855876882153324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8546211586280847562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9,
