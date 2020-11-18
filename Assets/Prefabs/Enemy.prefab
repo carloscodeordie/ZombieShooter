@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1031097018624551579}
   - component: {fileID: 1031097018624551572}
   - component: {fileID: 1349924572209230079}
+  - component: {fileID: 411011859487215565}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -147,6 +148,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPCamara: {fileID: 0}
   range: 100
+  damage: 30
+--- !u!114 &411011859487215565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031097018624551578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 387ebace7d1ec2e43b271b0d6394e2b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 100
 --- !u!1 &2967404116905986084
 GameObject:
   m_ObjectHideFlags: 0
