@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1031097018624551572}
   - component: {fileID: 1349924572209230079}
   - component: {fileID: 411011859487215565}
+  - component: {fileID: 5991286269002007038}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -149,6 +150,8 @@ MonoBehaviour:
   FPCamara: {fileID: 0}
   range: 100
   damage: 30
+  muzzleFlash: {fileID: 0}
+  hitEffect: {fileID: 0}
 --- !u!114 &411011859487215565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +165,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+--- !u!95 &5991286269002007038
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031097018624551578}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eef32c1779f30c241946ce5b902c50bf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2967404116905986084
 GameObject:
   m_ObjectHideFlags: 0
