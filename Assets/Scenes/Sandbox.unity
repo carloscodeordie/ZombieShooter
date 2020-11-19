@@ -305,7 +305,7 @@ Light:
   serializedVersion: 9
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1.35
+  m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -361,24 +361,18 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.2487667, y: 0.7326602, z: -0.34164503, w: 0.53348196}
+  m_LocalRotation: {x: 0, y: 0.92387956, z: -0.38268343, w: 0}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50.000004, y: 107.88, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 180, z: 0}
 --- !u!4 &730906275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: d85d3a32fb6157d488e31edf82b7b1c4,
     type: 3}
   m_PrefabInstance: {fileID: 1364092927}
-  m_PrefabAsset: {fileID: 0}
---- !u!20 &831161304 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 8198797460972869677, guid: 93d6aae0a93784b419429429a0d84c63,
-    type: 3}
-  m_PrefabInstance: {fileID: 8198797461786139637}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &831659482 stripped
 Transform:
@@ -746,13 +740,7 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 831659482}
-    - target: {fileID: 1349924572209230079, guid: 1ae44e6163993ff45916a1e733444244,
-        type: 3}
-      propertyPath: FPCamara
-      value: 
-      objectReference: {fileID: 831161304}
-    m_RemovedComponents:
-    - {fileID: 1349924572209230079, guid: 1ae44e6163993ff45916a1e733444244, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ae44e6163993ff45916a1e733444244, type: 3}
 --- !u!1001 &1632144801863780246
 PrefabInstance:
@@ -890,25 +878,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 265324306, guid: 93d6aae0a93784b419429429a0d84c63, type: 3}
-      propertyPath: muzzleFlash
-      value: 
-      objectReference: {fileID: 8198797461786139638}
-    - target: {fileID: 265324306, guid: 93d6aae0a93784b419429429a0d84c63, type: 3}
-      propertyPath: hitEffect
-      value: 
-      objectReference: {fileID: 752749137007293743, guid: d045552f0e16e344b8a45c1d51918038,
-        type: 3}
-    - target: {fileID: 7105344941948949291, guid: 93d6aae0a93784b419429429a0d84c63,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93d6aae0a93784b419429429a0d84c63, type: 3}
---- !u!198 &8198797461786139638 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 9137503620922061924, guid: 93d6aae0a93784b419429429a0d84c63,
-    type: 3}
-  m_PrefabInstance: {fileID: 8198797461786139637}
-  m_PrefabAsset: {fileID: 0}
