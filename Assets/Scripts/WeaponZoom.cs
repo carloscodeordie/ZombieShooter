@@ -16,7 +16,6 @@ public class WeaponZoom : MonoBehaviour
     private void Start()
     {
         fpsController = GetComponent<RigidbodyFirstPersonController>();
-        zoomedOutSensibility = fpsController.mouseLook.XSensitivity;
     }
 
     private void Update()
@@ -44,15 +43,18 @@ public class WeaponZoom : MonoBehaviour
 
     private void adjustMouseSensibility()
     {
-        if (zoomToggle)
+        if (fpsController != null)
         {
-            fpsController.mouseLook.XSensitivity = zoomedInSensibility;
-            fpsController.mouseLook.YSensitivity = zoomedInSensibility;
-        }
-        else
-        {
-            fpsController.mouseLook.XSensitivity = zoomedOutSensibility;
-            fpsController.mouseLook.YSensitivity = zoomedOutSensibility;
+            if (zoomToggle)
+            {
+                fpsController.mouseLook.XSensitivity = zoomedInSensibility;
+                fpsController.mouseLook.YSensitivity = zoomedInSensibility;
+            }
+            else
+            {
+                fpsController.mouseLook.XSensitivity = zoomedOutSensibility;
+                fpsController.mouseLook.YSensitivity = zoomedOutSensibility;
+            }
         }
     }
 }
