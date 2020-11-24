@@ -357,7 +357,6 @@ MonoBehaviour:
   zoomedInFOV: 20
   zoomedInSensibility: 0.5
   zoomedOutSensibility: 2
-  fpsController: {fileID: 0}
 --- !u!1 &2337074158997199752
 GameObject:
   m_ObjectHideFlags: 0
