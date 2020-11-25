@@ -453,11 +453,6 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 8866839344551551033}
-    - target: {fileID: 3076081674976988274, guid: af7070cb079bec14ca00722707fd5865,
-        type: 3}
-      propertyPath: fpsCamera
-      value: 
-      objectReference: {fileID: 8198797460972869677}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af7070cb079bec14ca00722707fd5865, type: 3}
 --- !u!4 &1762236607366550513 stripped
@@ -543,11 +538,6 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 8866839344551551033}
-    - target: {fileID: 3076081674976988274, guid: fe83263e148858545a70f108a812d1f0,
-        type: 3}
-      propertyPath: fpsCamera
-      value: 
-      objectReference: {fileID: 8198797460972869677}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe83263e148858545a70f108a812d1f0, type: 3}
 --- !u!4 &4710261236504876097 stripped
@@ -638,6 +628,11 @@ PrefabInstance:
       propertyPath: fpsCamera
       value: 
       objectReference: {fileID: 8198797460972869677}
+    - target: {fileID: 3076081674976988274, guid: d66f52a7dc86aa547a6690d8c5e2d2eb,
+        type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 8198797460963520489}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d66f52a7dc86aa547a6690d8c5e2d2eb, type: 3}
 --- !u!4 &5162570574193103942 stripped

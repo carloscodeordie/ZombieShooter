@@ -247,7 +247,6 @@ GameObject:
   - component: {fileID: 2337074159000356742}
   - component: {fileID: 2337074158999389510}
   - component: {fileID: 8480562238758200587}
-  - component: {fileID: 3076081674976988274}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -334,29 +333,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamara: {fileID: 0}
-  range: 100
-  damage: 30
+  range: 25
+  damage: 10
   muzzleFlash: {fileID: 2898670652074298120}
   hitEffect: {fileID: 752749137007293743, guid: d045552f0e16e344b8a45c1d51918038,
     type: 3}
   ammoSlot: {fileID: 0}
---- !u!114 &3076081674976988274
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2337074158997199750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efd6d8659cd7cf1488b3c0134233ad49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fpsCamera: {fileID: 0}
-  zoomedOutFOV: 60
-  zoomedInFOV: 20
-  zoomedInSensibility: 0.5
-  zoomedOutSensibility: 2
+  timeBetweenShots: 0.2
 --- !u!1 &2337074158997199752
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,19 +4,13 @@ using UnityStandardAssets.Characters.FirstPerson;
 public class WeaponZoom : MonoBehaviour
 {
     [SerializeField] Camera fpsCamera;
+    [SerializeField] RigidbodyFirstPersonController fpsController;
     [SerializeField] float zoomedOutFOV = 60f;
     [SerializeField] float zoomedInFOV = 20f;
     [SerializeField] float zoomedInSensibility = 0.5f;
     [SerializeField] float zoomedOutSensibility = 2f;
 
-    RigidbodyFirstPersonController fpsController;
-
     bool zoomToggle = false;
-
-    private void Start()
-    {
-        fpsController = GetComponent<RigidbodyFirstPersonController>();
-    }
 
     private void Update()
     {
@@ -25,7 +19,7 @@ public class WeaponZoom : MonoBehaviour
 
     private void HandleZoom()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetButtonDown("Fire2"))
         {
             if (!zoomToggle)
             {
@@ -43,18 +37,15 @@ public class WeaponZoom : MonoBehaviour
 
     private void adjustMouseSensibility()
     {
-        if (fpsController != null)
+        if (zoomToggle)
         {
-            if (zoomToggle)
-            {
-                fpsController.mouseLook.XSensitivity = zoomedInSensibility;
-                fpsController.mouseLook.YSensitivity = zoomedInSensibility;
-            }
-            else
-            {
-                fpsController.mouseLook.XSensitivity = zoomedOutSensibility;
-                fpsController.mouseLook.YSensitivity = zoomedOutSensibility;
-            }
+            fpsController.mouseLook.XSensitivity = zoomedInSensibility;
+            fpsController.mouseLook.YSensitivity = zoomedInSensibility;
+        }
+        else
+        {
+            fpsController.mouseLook.XSensitivity = zoomedOutSensibility;
+            fpsController.mouseLook.YSensitivity = zoomedOutSensibility;
         }
     }
 }
