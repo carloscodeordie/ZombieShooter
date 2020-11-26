@@ -20,18 +20,5 @@ public class PlayerHealth : MonoBehaviour
     private void Death()
     {
         GetComponent<DeathHandler>().HandleDeath();
-        FreezeTime();
-        DisplayCursor();
-    }
-
-    private void FreezeTime()
-    {
-        Time.timeScale = 0;
-    }
-
-    private void DisplayCursor()
-    {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
     }
 }

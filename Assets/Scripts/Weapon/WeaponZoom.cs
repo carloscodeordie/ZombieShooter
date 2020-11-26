@@ -17,6 +17,11 @@ public class WeaponZoom : MonoBehaviour
         HandleZoom();
     }
 
+    private void OnDisable()
+    {
+        ResetZoom();
+    }
+
     private void HandleZoom()
     {
         if (Input.GetButtonDown("Fire2"))
@@ -31,11 +36,11 @@ public class WeaponZoom : MonoBehaviour
                 zoomToggle = false;
                 fpsCamera.fieldOfView = zoomedOutFOV;
             }
-            adjustMouseSensibility();
+            AdjustMouseSensibility();
         }
     }
 
-    private void adjustMouseSensibility()
+    private void AdjustMouseSensibility()
     {
         if (zoomToggle)
         {
@@ -47,5 +52,13 @@ public class WeaponZoom : MonoBehaviour
             fpsController.mouseLook.XSensitivity = zoomedOutSensibility;
             fpsController.mouseLook.YSensitivity = zoomedOutSensibility;
         }
+    }
+
+    public void ResetZoom()
+    {
+        zoomToggle = false;
+        fpsCamera.fieldOfView = zoomedOutFOV;
+
+        AdjustMouseSensibility();
     }
 }
