@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67710b9ff77d3ca45973f7bf899084ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoAmount: 150
 --- !u!1001 &4042627501137564759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -467,6 +467,11 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 8866839344551551033}
+    - target: {fileID: 8480562238758200587, guid: af7070cb079bec14ca00722707fd5865,
+        type: 3}
+      propertyPath: damage
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af7070cb079bec14ca00722707fd5865, type: 3}
 --- !u!4 &1762236607366550513 stripped
@@ -500,7 +505,7 @@ PrefabInstance:
     - target: {fileID: 2337074158996965286, guid: fe83263e148858545a70f108a812d1f0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.535
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: fe83263e148858545a70f108a812d1f0,
         type: 3}
